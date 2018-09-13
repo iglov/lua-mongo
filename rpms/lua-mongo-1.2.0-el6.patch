@@ -1,0 +1,12 @@
+diff -ru lua-mongo-1.2.0-patch/CMakeLists.txt lua-mongo-1.2.0/CMakeLists.txt
+--- lua-mongo-1.2.0-patch/CMakeLists.txt	2018-07-27 06:35:34.000000000 +0300
++++ lua-mongo-1.2.0/CMakeLists.txt	2018-09-13 14:22:36.030943337 +0300
+@@ -32,7 +32,7 @@
+ 	set(LUA_MODULE_PATH lib/lua/${lua_ver})
+ endif()
+ 
+-add_definitions(-Wall -Wextra -Wpedantic -Wundef -Wshadow -Wredundant-decls
++add_definitions(-Wall -Wextra -Wundef -Wshadow -Wredundant-decls
+ 	-Wstrict-prototypes -Wmissing-prototypes -Wno-variadic-macros)
+ 
+ include_directories(${MONGOC_INCLUDE_DIRS} ${LUA_INCLUDE_DIRS})
